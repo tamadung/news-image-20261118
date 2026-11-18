@@ -3,12 +3,15 @@
 
 The picture is a newspaper-style front page (1024 by 1024, JPEG bytes in a
 file named entry.png): a masthead naming Wednesday 18 November 2026, a hero
-panel on the Gulf drone attack, and four panels -- the Crimea bridge hit,
-Trump landing in Manila, Nvidia's record sales, and Cyclone Akvan. The image
-was composed for this bounty; this program only carries it to the output
-directory unchanged, so both runs write exactly the same bytes. The output
-file keeps the name entry.png even though its bytes are a JPEG -- the gate
-tells the format from the first bytes, and the rules allow JPEG in entry.png.
+panel on the Gulf drone attack, four panels -- the Crimea bridge hit, Trump
+landing in Manila, Nvidia's record sales, and Cyclone Akvan -- plus a
+PIL-drawn world map marking 21 story locations and a 28-item "Around the
+world" list, for 33 stories in all. The image was composed for this bounty
+(resubmit: denser than the first entry's five stories); this program only
+carries it to the output directory unchanged, so both runs write exactly
+the same bytes. The output file keeps the name entry.png even though its
+bytes are a JPEG -- the gate tells the format from the first bytes, and the
+rules allow JPEG in entry.png.
 """
 import os
 import shutil
