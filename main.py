@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """Write the 18 November 2026 world-news front page to /output/entry.png.
 
-The picture is a newspaper-style front page (1024 by 1024, JPEG bytes in a
-file named entry.png): a masthead naming Wednesday 18 November 2026, a hero
-panel on the Gulf drone attack, four panels -- the Crimea bridge hit, Trump
-landing in Manila, Nvidia's record sales, and Cyclone Akvan -- plus a
-PIL-drawn world map marking 21 story locations and a 28-item "Around the
-world" list, for 33 stories in all. The image was composed for this bounty
-(resubmit: denser than the first entry's five stories); this program only
-carries it to the output directory unchanged, so both runs write exactly
-the same bytes. The output file keeps the name entry.png even though its
-bytes are a JPEG -- the gate tells the format from the first bytes, and the
-rules allow JPEG in entry.png.
+The picture is a newspaper-style front page (1024 by 1024, PNG,
+501,097 bytes): a masthead naming Wednesday 18 November 2026, a region
+bar and a field bar counting all 42 stories, a "day in numbers" strip,
+13 core stories each with its own flat-illustration panel (kicker +
+headline + deck), a large PIL-drawn world map with 13 numbered pins tied
+to the core stories plus gold dots for the rest, a 29-item "Also on
+Wednesday 18 November" list, and a date-check box naming the stories
+deliberately left out because they were first reported on 17 November.
+42 stories in all. The image was composed for this bounty (round 3: a
+total rebuild on the winning template — flat illustrations, not photos);
+this program only carries it to the output directory unchanged, so both
+runs write exactly the same bytes.
 """
 import os
 import shutil
